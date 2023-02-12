@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply m-0 p-0 bg-green-100;
+}
+
+input {
+  @apply p-4 border border-black rounded-lg;
+}
