@@ -28,16 +28,16 @@
     /admin-view-product/:id => View product
 
 
-4. Routes for Customer
+4.Routes for Customer
 
 
-   /products => All products to buy
+     /products => All products to buy
 
-   /cart => Customer's Cart
+     /cart => Customer's Cart
 
-   /address-info => Filling address
+      /address-info => Filling address
 
-   /payment => Final Step for placing order and making payment.
+     /payment => Final Step for placing order and making payment.
 
     
 
