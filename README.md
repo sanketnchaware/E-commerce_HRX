@@ -1,6 +1,3 @@
-# E-commerce_HRX
-
-
 
 # E-commerce Application using MERN Stack
 
@@ -34,16 +31,13 @@
 4. Routes for Customer
 
 
+   /products => All products to buy
 
+   /cart => Customer's Cart
 
+   /address-info => Filling address
 
-        /products => All products to buy
-
-        /cart => Customer's Cart
-
-        /address-info => Filling address
-
-        /payment => Final Step for placing order and making payment.
+   /payment => Final Step for placing order and making payment.
 
     
 
