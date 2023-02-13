@@ -12,7 +12,7 @@ const Products = () => {
   const getProducts = async () => {
     setLoading(true);
     await axios
-      .get(`http://localhost:5544/products?page=${page}`)
+      .get(`http://localhost:5000/products?page=${page}`)
       .then((response) => {
         console.log("response:", response);
         setLoading(false);

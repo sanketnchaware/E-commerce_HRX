@@ -2,6 +2,7 @@ import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import swal from "sweetalert";
 import axios from "axios";
+import Pay from "./Pay";
 const Payment = () => {
   const navigate = useNavigate();
   const { state } = useLocation();
@@ -17,7 +18,7 @@ const Payment = () => {
     console.log("postdata:", postdata);
 
     await axios
-      .post("http://localhost:5544/orders", postdata)
+      .post("http://localhost:5000/orders", postdata)
       .then((response) => {
         console.log("response:", response);
         localStorage.removeItem("total", "cart");
@@ -42,10 +43,10 @@ const Payment = () => {
         <br />
 
         <button
-          onClick={MakePayment}
+          // onClick={MakePayment}
           className="border px-4 py-2 rounded-xl w-fit bg-green-600 text-2xl text-white m-auto"
         >
-          Proceed to Pay
+          <Pay MakePayment={MakePayment} total={total} />
         </button>
       </div>
     </div>

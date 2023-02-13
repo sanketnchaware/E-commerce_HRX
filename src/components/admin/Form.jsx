@@ -34,7 +34,7 @@ const CreateForm = ({ id }) => {
 
     if (id) {
       await axios
-        .patch(`http://localhost:5544/products/${id}`, postdata)
+        .patch(`http://localhost:5000/products/${id}`, postdata)
         .then((response) => {
           swal("Product Edited");
           navigate("/admin-products");
@@ -45,7 +45,7 @@ const CreateForm = ({ id }) => {
         });
     } else {
       await axios
-        .post(`http://localhost:5544/products`, postdata)
+        .post(`http://localhost:5000/products`, postdata)
         .then((response) => {
           swal("Product Created");
           navigate("/admin-products");

@@ -13,7 +13,7 @@ const ProductList = () => {
   const getProducts = async () => {
     setLoading(true);
     await axios
-      .get(`http://localhost:5544/products?page=${page}`)
+      .get(`http://localhost:5000/products?page=${page}`)
       .then((response) => {
         setLoading(false);
         const { data } = response.data;
@@ -31,7 +31,7 @@ const ProductList = () => {
 
   const DeleteProduct = async (id) => {
     await axios
-      .delete(`http://localhost:5544/products/${id}`)
+      .delete(`http://localhost:5000/products/${id}`)
       .then((response) => {
         getProducts();
         swal("Product Deleted");

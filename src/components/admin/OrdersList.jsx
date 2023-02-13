@@ -9,7 +9,7 @@ const OrdersList = () => {
   const getOrders = async () => {
     setLoading(true);
     await axios
-      .get(`http://localhost:5544/orders`)
+      .get(`http://localhost:5000/orders`)
       .then((response) => {
         console.log("response:", response);
         setLoading(false);

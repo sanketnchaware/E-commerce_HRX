@@ -9,6 +9,7 @@ import Dashboard from "./Pages/Dashboard";
 import ProductList from "./components/admin/ProductList";
 import CreateProduct from "./components/admin/CreateProduct";
 import OrdersList from "./components/admin/OrdersList";
+import Pay from "../src/Pages/Pay.jsx";
 
 function App() {
   const { pathname } = useLocation();
