@@ -2,6 +2,8 @@
 # E-commerce Application using MERN Stack
 
 1. After cloning repository run this command in root folder to start react server.
+
+
  **npm i**
 
 
