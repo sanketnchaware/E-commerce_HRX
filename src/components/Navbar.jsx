@@ -13,11 +13,14 @@ const Navbar = () => {
         <Link to="/products">Products </Link>
         <Link to="/cart">My Cart </Link>
 
-        <img
-          className=" cursor-pointer h-4 w-4"
-          src="https://cdn-icons-png.flaticon.com/512/747/747376.png"
-          alt=""
-        />
+        <Link className="flex gap-1 items-center" to="/admin-dashboard">
+          Dashboard
+          <img
+            className=" cursor-pointer h-4 w-4"
+            src="https://cdn-icons-png.flaticon.com/512/747/747376.png"
+            alt=""
+          />{" "}
+        </Link>
       </div>
     </div>
   );
